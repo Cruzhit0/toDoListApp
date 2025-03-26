@@ -1,6 +1,6 @@
 import User from "./content/userModel";
-import Task from "./content/taskModel";
-import Subtask from "./content/subtaskModel";
+import {Task} from "./content/taskModel";
+import {Subtask} from "./content/subtaskModel";
 
 
 // Definir relaciones

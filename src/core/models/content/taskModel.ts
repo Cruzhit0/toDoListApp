@@ -27,4 +27,4 @@ Task.init(
   { sequelize, modelName: 'Task', paranoid: true }
 );
 
-export default Task;
+export  {Task, TaskAttributes};
