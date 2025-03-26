@@ -26,4 +26,4 @@ Subtask.init(
 );
 
 
-export default Subtask;
+export {Subtask, SubtaskAttributes};

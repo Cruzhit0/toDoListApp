@@ -2,7 +2,7 @@ import { Model, DataTypes } from 'sequelize';
 import  sequelize  from '@core/config/database';
 import bcrypt from 'bcrypt';
 
-export interface UserAttributes {
+interface UserAttributes {
   id?: number;
   email: string;
   password: string;
@@ -61,4 +61,4 @@ User.init(
   }
 )
 
-export default User;
+export  {User, UserAttributes};
