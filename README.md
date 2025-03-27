@@ -2,7 +2,7 @@
 # To Do List APP
 ##backend
 
-Este es el backend de una joyería básica que permite gestionar productos, ventas y usuarios. Implementa autenticación básica y sigue las mejores prácticas de desarrollo con Node.js, Express y TypeScript.
+Este es el backend de Un organizador de tiempo lista de tares que permite gestionar tareas y sub tareas. Implementa autenticación básica y sigue las mejores prácticas de desarrollo con Node.js, Express y TypeScript.
 
 ## 📌 Tecnologías Utilizadas
 
