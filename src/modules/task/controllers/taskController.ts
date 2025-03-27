@@ -9,8 +9,8 @@ export class TaskController {
 
   public async createTask(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      // const userId = (req as any).user.id;
-      const taskData = { ...req.body };
+      const userId = (req as any).user.id;
+      const taskData = { ...req.body,userId };
       const task = await taskService.createTask(taskData);
       res.status(201).json(task);
     } catch (error) {
@@ -58,7 +58,7 @@ export class TaskController {
 
   public async getTasksByUser(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const userId = Number(req.params.id);
+      const userId = (req as any).user.id;
       const tasks = await taskService.getTasksByUser(userId);
       res.status(200).json(tasks);
     } catch (error) {
