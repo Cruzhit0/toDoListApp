@@ -52,31 +52,41 @@ Compila el código TypeScript en JavaScript en la carpeta dist/:
 ```
 npm run build  
 ```
- Endpoints RESTful
-🔹 Autenticación
-Método	Ruta	Acción
-POST	/api/auth/login	Iniciar sesión (JWT)
-POST	/api/auth/signup	Registrar nuevo usuario
-🔹 Tareas (Recurso Padre)
-Método	Ruta	Acción
-GET	/api/tasks	Listar todas las tareas
-POST	/api/tasks	Crear nueva tarea
-GET	/api/tasks/:id	Obtener tarea por ID
-PUT	/api/tasks/:id	Actualizar tarea
-DELETE	/api/tasks/:id	Eliminar tarea
-🔹 Subtareas (Recurso Hijo)
-Método	Ruta	Acción
-GET	/api/tasks/:id/subtasks	Listar subtareas de una tarea
-POST	/api/subtasks	Crear subtarea
-PATCH	/api/subtasks/:id	Marcar como completada
-DELETE	/api/subtasks/:id	Eliminar subtarea
-## 📌 Versionamiento  
-Este proyecto utiliza Git con las siguientes ramas:  
+# Endpoints RESTful
 
-main → Código estable en producción  
-develop → Desarrollo activo  
-feature/nombre-feature → Funcionalidades nuevas  
+## 🔹 Autenticación
 
+| Método | Ruta                | Acción                     |
+|--------|---------------------|----------------------------|
+| POST   | `/api/auth/login`   | Iniciar sesión (JWT)       |
+| POST   | `/api/auth/signup`  | Registrar nuevo usuario    |
+
+## 🔹 Tareas (Recurso Padre)
+
+| Método | Ruta               | Acción                     |
+|--------|--------------------|----------------------------|
+| GET    | `/api/tasks`       | Listar todas las tareas    |
+| POST   | `/api/tasks`       | Crear nueva tarea          |
+| GET    | `/api/tasks/:id`   | Obtener tarea por ID       |
+| PUT    | `/api/tasks/:id`   | Actualizar tarea           |
+| DELETE | `/api/tasks/:id`   | Eliminar tarea             |
+
+## 🔹 Subtareas (Recurso Hijo)
+
+| Método | Ruta                     | Acción                          |
+|--------|--------------------------|---------------------------------|
+| GET    | `/api/tasks/:id/subtasks`| Listar subtareas de una tarea   |
+| POST   | `/api/subtasks`          | Crear subtarea                  |
+| PATCH  | `/api/subtasks/:id`      | Marcar como completada          |
+| DELETE | `/api/subtasks/:id`      | Eliminar subtarea               |
+
+## 📌 Versionamiento
+
+Este proyecto utiliza Git con las siguientes ramas:
+
+- **main** → Código estable en producción  
+- **develop** → Desarrollo activo  
+- **feature/nombre-feature** → Funcionalidades nuevas  
 =
 ## 📌 Contribuciones  
 Si deseas contribuir, crea un fork del proyecto, trabaja en una rama separada y envía un Pull Request.
