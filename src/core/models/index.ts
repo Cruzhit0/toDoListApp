@@ -1,5 +1,5 @@
-import User from "./content/userModel";
-import {Task} from "./content/taskModel";
+import {User }from "./content/userModel";
+import {Task }from "./content/taskModel";
 import {Subtask} from "./content/subtaskModel";
 
 
