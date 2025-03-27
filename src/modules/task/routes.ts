@@ -4,6 +4,10 @@ import { TaskController } from './controllers/taskController';
 const router = Router();
 const taskController = new TaskController();
 
+import { authMiddleware } from '@core/middleware/authMiddleware'; 
+
+router.use(authMiddleware);
+
 router.post('/', taskController.createTask.bind(taskController));
 router.get('/user/:id', taskController.getTasksByUser.bind(taskController));
 router.get('/:id', taskController.getTaskById.bind(taskController));

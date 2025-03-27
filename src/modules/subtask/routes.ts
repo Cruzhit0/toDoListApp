@@ -1,9 +1,10 @@
 import { Router } from 'express';
 import { SubtaskController } from './controllers/subtaskController';
+import { authMiddleware } from '@core/middleware/authMiddleware'; 
 
 const router = Router();
 const subtaskController = new SubtaskController();
-
+router.use(authMiddleware);
 
 router.get('/', subtaskController.getAllSubtasks.bind(subtaskController));
 router.post('/', subtaskController.createSubtask.bind(subtaskController));
